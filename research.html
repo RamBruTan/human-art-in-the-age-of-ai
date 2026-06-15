@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Process — A Productivity Fixated World in the Age of AI: Investigating The Purpose of Human Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Bit wider than default to give embeds more room */
+        main { max-width: 900px; }
+
+        .page-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+
+        /* Jump links to sections on this page */
+        .page-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-nav a {
+            font-size: 0.8rem;
+            padding: 0.35rem 0.85rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            color: var(--text-muted);
+            transition: border-color 0.18s ease, color 0.18s ease;
+        }
+        .page-nav a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Each major section scrolls to a bit below the sticky nav */
+        .research-section {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: calc(var(--nav-height) + 1.5rem);
+        }
+
+        .embed-wrapper.slideshow iframe { height: 480px; }
+
+        @media (max-width: 640px) {
+            .embed-wrapper.slideshow iframe { height: 260px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-brand">Bruce Tan</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paper.html">Read the Paper</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html" class="active">Process & Extra Materials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <header class="page-header">
+            <span class="section-label">Process &amp; Materials</span>
+            <h1>Research Process</h1>
+        </header>
+
+        <!-- Jump links so the reader can go straight to a section -->
+        <nav class="page-nav" aria-label="Page sections">
+            <a href="#slideshow">Presentation</a>
+            <a href="#infographic">Infographic</a>
+            <a href="#data">Data Collection</a>
+            <a href="#bibliography">Annotated Bibliography</a>
+        </nav>
+
+        <!-- Presentation slideshow embed -->
+        <section id="slideshow" class="research-section">
+            <h2>Presentation</h2>
+            <p>As the midterm for this course, we created a presentation to showcase our progress to others. Since my presentation, my focus and scope has shifted significantly.</p>
+
+            <div class="embed-wrapper slideshow">
+                <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vSf6AhKr_Vv_eonDv63o8-2zjB3Irl_vHTM5-6hZYn06M9BPyfYQ3g-BRiVSSc-Lg/pubembed?start=false&loop=false&delayms=3000"
+                    title="Research Presentation"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Infographic image -->
+        <section id="infographic" class="research-section">
+            <h2>Infographic</h2>
+            <p>Towards the end of the course, we also created an infographic for our research, presenting it and its conclusions in a more marketable way.</p>
+
+            <img class="portrait" src="infographic.png" alt="Infographic">
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Data collection methodology and data -->
+        <section id="data" class="research-section">
+            <h2>Data Collection</h2>
+
+            <section style="margin-bottom: 2rem;">
+                <h3>Methodology</h3>
+                <p>Within the questionnaire, administered via Qualtrics, each respondent would be separated randomly into 4 categories, a 2x2 between AI used versus no AI, and hobby versus professional. For each category, a scenario would be described, where the respondent imagines themself as either a hobbyist or professional illustrator, and either using AI or not using AI. To get approximately 50 respondents per category, 200 total responses were collected, and after reading each scenario, they would all answer the same questions. The scenarios focus on a single discipline to minimize outside influences, being illustration due to the impact of generative AI on it. Despite the narrower scenario description, conclusions drawn should be able to be applied more broadly, across anything that can be considered to contain the creative process, directing future research to observe those other disciplines. From this, effective comparisons could be made between each scenario, of working vs. nonworking, and AI vs. no AI. From each person, their self-described emotional, social, and cognitive fulfillment, along with general satisfaction was gauged on a 1-10 scale. Furthermore, various demographic data were collected, enabling more comparisons, such as gender and income.</p>
+            </section>
+
+            <section>
+                <h3>Data</h3>
+                <p>This section contains the raw data collected, and the questions asked, with private data omitted. Graphs and visualizations can be found within the paper.</p>
+                
+                <div class="embed-wrapper spreadsheet">
+                    <iframe
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGPlciBf7LPxnJt4zg07bZ8UnCt4IYFgG5qJL_UO-Qnc5OmBfrYWxhAmTFySymVQ/pubhtml?widget=true&amp;headers=false"
+                        title="Research Data"
+                        style="min-height: 700px;"
+                    ></iframe>
+                </div>
+            </section>
+        </section>
+
+        <hr class="divider" />
+
+        <section id="bibliography" class="research-section">
+            <h2>Bibliography</h2>
+
+            <div class="embed-wrapper">
+                <iframe
+                    src="References_Citations.pdf"
+                    title="Bibliography"
+                    style="min-height: 700px;"
+                ></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2026 Bruce Tan. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

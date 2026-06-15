@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper — A Productivity Fixated World in the Age of AI: Investigating The Purpose of Human Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Wider than default so the PDF has room */
+        main { max-width: 1000px; }
+
+        .paper-header { margin-bottom: 2rem; }
+
+        .paper-title {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-meta {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .embed-wrapper iframe {
+            height: 85vh;
+            min-height: 520px;
+        }
+
+        .embed-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-brand">Bruce Tan</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paper.html" class="active">Read the Paper</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Process & Extra Materials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <header class="paper-header">
+            <span class="section-label">Full Text</span>
+            <h1 class="paper-title">An AI World Fixated on Productivity: Investigating the Purpose of Human Art</h1>
+            <p class="paper-meta">Bruce Tan &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; Glenelg High School, Independent Research</p>
+        </header>
+        
+        <div class="embed-wrapper">
+            <iframe
+                src="Bruce Tan - Synthesis Paper.pdf"
+                title="Research Paper"
+            ></iframe>
+        </div>
+
+        <p class="embed-note">
+            Having trouble viewing? <a href="Bruce Tan - Synthesis Paper.pdf">Download the paper here.</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2026 Bruce Tan. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

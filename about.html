@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — A Productivity Fixated World in the Age of AI: Investigating The Purpose of Human Art</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .page-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+
+        /* Author portrait */
+        .portrait {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+
+        .portrait-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--bg-alt);
+            border: 1px dashed var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-row { margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-brand">Bruce Tan</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paper.html">Read the Paper</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="research.html">Process & Extra Materials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <header class="page-header">
+            <span class="section-label">Background</span>
+            <h1>About the Author</h1>
+        </header>
+
+        <!-- Bio -->
+        <section class="content-section">
+            <h2>Biography</h2>
+
+            <img class="portrait" src="photo.png" alt="Headshot of Bruce Tan">
+
+            <p>Bruce Tan is a current high schooler that is interested in computer science, mathematics, and art.</p>
+            <p>In his free time, Bruce enjoys poi spinning, origami, and creating Desmos graphs.</p>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Introduction video -->
+        <section class="content-section">
+            <h2>Video Introduction</h2>
+
+            <p>An introductory video was created as a part of the course.</p>
+            <div class="video-wrapper">
+                <iframe
+                    src="Bruce Tan Video.mp4"
+                    title="About the Author Video"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- How the I came to this topic -->
+        <section class="content-section">
+            <h2>Finding this Topic</h2>
+            <p>I became interested in looking into the psychological impact of AI substitution when generative AI began rising in popularity in 2023. As both a computer scientist and an artist, I try to look at AI from multiple perspectives, formulating and analyzing different supports and criticisms of AI. I think that technically, AI is impressive, able to simulate and imitate something approximating human creation. I think that AI will continue growing, and judging the "objective" quality of the output doesn't hold as well as a criticism when it will continue improving. Instead, I decided to take a different angle, looking at what changes in the process rather than the product.</p>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="content-section">
+            <h2>Continuing This Work</h2>
+            <p>The purpose of this paper was to lay the foundations for future research into the ethics of generative AI use. Furthermore, I proposed the idea to look at disciplines through the lens of process versus product focus.</p>
+            <p>In future research, I believe it is necessary to discover if there is an inherent product versus product focus within a discipline, and if it is independent of the practitioner's focus. I think research should be conducted over several fields, in surveys similar to the one in this paper, and looking at trends over different disciplines. Notably, in areas seeing a rise in AI use, including music, writing, programming, applied mathematics, pure mathematics, and medicine.</p>
+        </section>
+
+        <div class="cta-row">
+            <a href="contact.html" class="btn btn-primary">Share Your Feedback &rarr;</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2026 Bruce Tan. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

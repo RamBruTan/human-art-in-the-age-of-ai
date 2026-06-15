@@ -1,0 +1,15 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore Visual Studio folder
+.vs/
+*.user
+*.suo
+
+# Ignore logs
+*.log
+
+# Ignore node modules
+node_modules/

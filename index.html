@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Research paper by [Author Name] investigating the purpose of human art in an AI-driven, productivity-focused world." />
+    <title>A Productivity Fixated World in the Age of AI: Investigating The Purpose of Human Art — Research</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Title page block */
+        .hero {
+           position: relative;
+           text-align: center;
+ 
+           background-image: url('image.jpg');
+ 
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+ 
+           /* Fallback colour shown while image loads or if path is wrong */
+           background-color: #1c1c1c;
+ 
+           min-height: 62vh;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           padding: 5rem 2rem 4rem;
+ 
+           border-bottom: none;
+           margin-bottom: 3rem;
+       }
+ 
+       /* Dark overlay */
+       .hero::before {
+           content: '';
+           position: absolute;
+           inset: 0;
+           background: rgba(10, 10, 14, 0.8);
+           z-index: 0;
+       }
+ 
+       /* Lift above overlay */
+       .hero > * {
+           position: relative;
+           z-index: 1;
+       }
+ 
+       .hero-eyebrow {
+           font-size: 0.72rem;
+           font-weight: 600;
+           letter-spacing: 0.22em;
+           text-transform: uppercase;
+           color: rgba(255, 255, 255, 0.55);
+           margin-bottom: 1.5rem;
+       }
+ 
+       .hero-title {
+           font-family: 'Cormorant Garamond', serif;
+           font-size: clamp(2rem, 5.5vw, 3.4rem);
+           font-weight: 600;
+           line-height: 1.2;
+           color: #ffffff;
+           margin-bottom: 1.75rem;
+           text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+       }
+ 
+       /* Thin rule between title and metadata */
+       .hero-rule {
+           width: 48px;
+           height: 1px;
+           background: rgba(255, 255, 255, 0.28);
+           margin: 0 auto 1.25rem;
+       }
+ 
+       .hero-meta {
+           font-size: 0.9rem;
+           color: rgba(255, 255, 255, 0.52);
+           line-height: 2;
+       }
+       .hero-meta span { display: block; }
+ 
+       .hero-attribution {
+           position: absolute;
+           bottom: 0.6rem;
+           right: 0.9rem;
+           z-index: 2;
+           font-size: 0.65rem;
+           letter-spacing: 0.04em;
+           color: rgba(255, 255, 255, 0.32);
+       }
+       .hero-attribution a {
+           color: inherit;
+           text-decoration: none;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+       }
+       .hero-attribution a:hover {
+           color: rgba(255, 255, 255, 0.6);
+       }
+
+        .nav-section-intro {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* images */
+        figure {
+            margin: 2rem 0;
+        }
+ 
+        figure img {
+            width: 100%;
+            display: block;
+            border-radius: 3px;
+            border: 1px solid var(--border);
+        }
+ 
+        figcaption {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-brand">Bruce Tan</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="paper.html">Read the Paper</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Process & Extra Materials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Title page -->
+    <header class="hero">
+        <p class="hero-eyebrow">Research Paper</p>
+        <h1 class="hero-title">A Productivity Fixated World in the Age of AI: Investigating The Purpose of Human Art</h1>
+        <div class="hero-rule"></div>
+        <div class="hero-meta">
+            <span>Bruce Tan</span>
+            <span>2026 &nbsp;&middot;&nbsp; Glenelg High School, Independent Research I</span>
+        </div>
+
+        <p class="hero-attribution">
+            Photo: <a href="#" target="_blank" rel="noopener">Adobe Stock</a>
+        </p>
+    </header>
+    <main>
+
+        <!-- Topic sentence / intro paragraph -->
+        <section class="content-section">
+            <span class="section-label">Introduction</span>
+            <p>This research was conducted and this website was created as a part of the curriculum for the Independent Research course at Glenelg High School. This research aimed to provide an alternate understanding of the impacts of AI use, through the lens of that it takes away from human creation.</p>
+            <p>The paper itself can be viewed on the paper page<!--, or at the journal publication at [insert link]-->. The other pages of this website aim to communicate the findings of this reserach, extrapolate trends and principles, and share my more personal beliefs about the research. This website will also contain other materials created as a part of the curriculum or as a part of the research process.</p>
+        </section>
+
+        <figure>
+            <img src="image.png" alt="Someone writing in a book" />
+            <figcaption>Person Writing, Pixabay, Public Domain.</figcaption>
+        </figure>
+
+        <hr class="divider" />
+
+        <!-- Context for how and where this was written -->
+        <section class="content-section">
+            <h2>Research Context</h2>
+            <p>As was said, this research was conducted as a part of the Independent Research course at Glenelg High School, overseen by Leila Chawkat. I chose this topic of research as generative AI use, or simply AI use, is becoming more and more prevalent and mainstream, with growing use to replace human work. Many people seek to embrace AI and improve it, but many others oppose AI.</p>
+            <p>In my research, I had noticed a noticable lack of data investigating the impact of generative AI use on psychological state the user, specifically when it is used in "creative industries" such as illustration.</p>
+            <p>In my conclusions and perspectives, as seen most prevalently in this website, I had also aimed to provide the frame of understanding that looks at all disciplines through the lens of how focused on product and how focused on process they are. For example, many dancers and performers find themselves "lost within the moment," focusing on the process of the dance. While in medicine, the goal is the product: to save and enhance lives.</p>
+        </section>
+
+        <hr class="divider" />
+        
+        <!-- Abstract -->
+        <section class="content-section">
+            <h2>Abstract</h2>
+            <p>Modern society increasingly prioritizes final products over the creative process, a trend exacerbated by the rapid adoption of generative AI. This study aims to explore the impact of AI integration into the creative process on subjective well-being and fulfillment, and to determine whether these effects differ between individuals creating for leisure versus those creating for a profession. As a part of this research, a quantitative-focused survey was conducted with 200 working adults, categorized using a 2x2 design: acting as either a hobbyist or a professional illustrator, and either utilizing AI or not utilizing AI. The data reveals a consistent and statistically significant drop in a person’s well-being, across both hobbyist and professional groups when AI is utilized in the creative process. The differences in fulfillment drops between the hobbyist and professional groups were not statistically significant. While a positive correlation was found between a product-focused mindset and satisfaction among professionals using AI, the overall satisfaction for AI users across the board remained significantly lower than for those who did not use AI. Furthermore, while the data collection did not directly investigate forms of creative expression outside of what is traditionally considered an art, other potential avenues of creative expression, such as in “pure” STEM areas, show evidence of having similar psychological benefits, through a similar process to traditional arts. This relationship will have to be explored more directly in future studies. These findings suggest that the integration of AI into creative tasks carries measurable psychological costs by separating the creator from the intrinsically beneficial process of making. These findings underscore the value of human-made art and suggest that the ongoing conversation surrounding AI adoption must extend beyond efficiency to account for the human experience of creation, and the value of maintaining more psychologically healthy lives.</p>
+        </section>
+
+        <figure>
+            <img src="image.webp" alt="Man painting himself painting himself" />
+            <figcaption>Seamus Wray, Self Portraitception</figcaption>
+        </figure>
+
+        <hr class="divider" />
+
+        <!-- Personal perspective -->
+        <section class="content-section">
+            <h2>Perspective</h2>
+            <p>Generally, whether or not generative AI use is “good” ultimately depends on the extent to which the creative and ingenuitive decisions matter within a discipline. In painting, the whole point is dominated by the creative decisions of the painter, and thus, using AI to substitute this is most detrimental and best to avoid. Within programming, it is more of a middle ground. While making programs involves many creative decisions and cognitive work, it is reasonable to simply desire a specific program that fulfills a task. Although human programming still gives more benefits to the programmer, AI use may not be as adverse. In fields such as medicine, however, AI should very much be implemented. Able to more quickly suggest possible treatments or design molecular structures, as long as it acts under human supervision so AI is not responsible for any decisions, it can greatly accelerate the thing that most matters within medicine, or the “product”: improving and saving lives.</p>
+            <p>When presenting an artwork to a viewer, people generally appreciate works more when they can sense the "passion" behind it, when appears human and is created by a human. As social creatures, people long for genuine expression, and knowing that a work was created with AI lessens that connection.</p>
+        </section>
+
+        <!-- Scope clarification  -->
+        <div class="scope">
+            <strong>A note on scope:</strong> This paper focuses specifically on the psychological impact and ethics of AI's use in human creativity and works. It does not significantly address other critical concerns surrounding artificial intelligence, such as environmental impact, labor displacement, or data privacy, all of which warrant dedicated study elsewhere.
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Navigation grid to the other pages -->
+        <section>
+            <p class="nav-section-intro">Explore this project</p>
+            <div class="nav-grid">
+                <a href="paper.html" class="nav-card">
+                    <span class="nav-card-label">Full Text</span>
+                    <span class="nav-card-title">Read the Paper</span>
+                    <span class="nav-card-arrow">→</span>
+                </a>
+                <a href="about.html" class="nav-card">
+                    <span class="nav-card-label">Background</span>
+                    <span class="nav-card-title">About the Author</span>
+                    <span class="nav-card-arrow">→</span>
+                </a>
+                <a href="research.html" class="nav-card">
+                    <span class="nav-card-label">Process &amp; Materials</span>
+                    <span class="nav-card-title">Research Process</span>
+                    <span class="nav-card-arrow">→</span>
+                </a>
+                <a href="contact.html" class="nav-card">
+                    <span class="nav-card-label">Response</span>
+                    <span class="nav-card-title">Give Feedback</span>
+                    <span class="nav-card-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-text">&copy; 2026 Bruce Tan. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
